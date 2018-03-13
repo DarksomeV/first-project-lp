@@ -1,0 +1,230 @@
+/* ===== Reset start ===== */
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background-color: #fff;
+	color: #777;
+	font: 300 15px/1 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	font-weight: normal;
+}
+p {
+	margin: 0;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+ul, ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+blockquote {
+	margin: 0;
+}
+/* ===== Reset end ===== */
+/* ===== Default classes start */
+/* 
+	text color, text align, float, backgrounds colors, text transform
+*/
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.bg-black {
+	background-color: #111;
+}
+
+.bg-grey {
+	background-color: #f8f8f8;
+}
+/* ===== Default classes end */
+/* ===== Default component start ===== */
+/* 
+	Buttons, text, title, section, small-section header, footer,
+	form elements, icons, tabs, blockquote, container 
+*/
+.default-section {
+	padding: 135px 0;
+}
+
+.small-section {
+	padding: 70px 0;
+}
+
+.container {
+	max-width: 1200px; /* 1200 - 30 = 1170 */
+	padding: 0 15px;
+	margin: auto;
+}
+
+.container-fluid {
+	padding: 0 15px;
+}
+
+.title {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	color: #111;
+}
+.title.title-white {
+	color: #fff;
+}
+.title.section-title {
+	font-size: 18px;
+	letter-spacing: .5em; /* 0.5em = .5em */
+	margin-bottom: 75px;
+	font-weight: 400;
+}
+.title.section-title-light {
+	font-size: 18px;
+	letter-spacing: .3em;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.default-text {
+	font-size: 15px;
+	line-height: 1.7333;
+	font-weight: 300;
+}
+
+blockquote, 
+.blockquote {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+blockquote span, 
+.blockquote span {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 2px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.btn.btn-default {
+	background-color: #e5e5e5;
+	color: #777;
+}
+
+.btn.btn-default:hover {
+	background-color: #d1d0d0;
+}
+
+.btn.btn-black {
+	background-color: #323232;
+	color: #fff;
+}
+
+.btn.btn-black:hover {
+	background-color: #000;
+}
+
+.btn.btn-xs {
+	padding: 7px 15px;
+	font-size: 11px;
+}
+/* ===== Default component end ===== */
+
+
+/* ===== Custom start =====*/
+
+/* !=== HEADER ===! */
+.header{
+	padding:25px 15px;
+	background: transparent;
+	font-size: 11px;
+	letter-spacing:0.3em;
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+}
+
+.header .header-logo{
+	float:left;
+}
+
+.header .header-nav{
+	float:right;
+	color:#fff;
+	text-transform: uppercase;   /*Сначала думал поставить в .header, (вместе с свойством color) но потом решил сюда, надеюсь это не ошибка, на то есть свои обоснования*/
+}
+
+.header .header-nav li {
+	float: left;
+	line-height:21px;
+}
+
+.header .header-nav li + li{
+	margin-left: 32px;
+}
+/*!=== INNER ===!*/
+.inner{
+	background:rgba(0, 0, 0, .3) url(../img/bg-inner.jpg) no-repeat center / cover;
+	background-blend-mode:multiply;
+	height:100vh;
+	text-align: center;
+	color:#fefefe;
+	padding-top: 72px;
+}
+
+.inner::before{
+	content:'';
+	display: inline-block;
+	height:100%;
+	vertical-align: middle;
+	margin-left: -4px;
+}
+
+.inner-content{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.title.inner-title{
+	font-size: 30px;
+	letter-spacing:1.7em;
+	text-indent:1.7em;
+	margin-bottom: 95px;
+	color:#fefefe;
+}
+
+.inner-description{
+	font-size: 19px;
+}
+/*===== Custom end =====*/
+

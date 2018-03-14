@@ -159,46 +159,46 @@ blockquote span,
 }
 /* ===== Default component end ===== */
 
-
 /* ===== Custom start =====*/
 
 /* !=== HEADER ===! */
 .header{
-	padding:25px 15px;
+	padding: 25px 15px;
 	background: transparent;
 	font-size: 11px;
-	letter-spacing:0.3em;
-	position:fixed;
+	letter-spacing: 0.3em;
+	position: fixed;
 	top:0;
 	left:0;
 	right:0;
 }
 
 .header .header-logo{
-	float:left;
+	float: left;
+	opacity: .9;
 }
 
 .header .header-nav{
-	float:right;
-	color:#fff;
+	float: right;
+	color: rgba(255, 255, 255, .75);
 	text-transform: uppercase;   /*Сначала думал поставить в .header, (вместе с свойством color) но потом решил сюда, надеюсь это не ошибка, на то есть свои обоснования*/
 }
 
 .header .header-nav li {
 	float: left;
-	line-height:21px;
+	line-height: 21px;
 }
 
 .header .header-nav li + li{
 	margin-left: 32px;
 }
+
 /*!=== INNER ===!*/
 .inner{
-	background:rgba(0, 0, 0, .3) url(../img/bg-inner.jpg) no-repeat center / cover;
-	background-blend-mode:multiply;
-	height:100vh;
-	text-align: center;
-	color:#fefefe;
+	background: rgba(0, 0, 0, .3) url(../img/bg-inner.jpg) no-repeat center / cover;
+	background-blend-mode: multiply;
+	height: 100vh;
+	color: #fefefe;
 	padding-top: 72px;
 }
 
@@ -220,11 +220,12 @@ blockquote span,
 	letter-spacing:1.7em;
 	text-indent:1.7em;
 	margin-bottom: 95px;
-	color:#fefefe;
+	color:rgba(254, 254, 254, .9);
 }
 
 .inner-description{
 	font-size: 19px;
+	color:rgba(254, 254, 254, .68);
 }
 /*===== Custom end =====*/
 

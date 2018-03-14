@@ -70,6 +70,7 @@ blockquote {
 */
 .default-section {
 	padding: 135px 0;
+	overflow: hidden;
 }
 
 .small-section {
@@ -133,6 +134,7 @@ blockquote span,
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 400;
+	font-family: 'Open Sans';
 }
 
 .btn.btn-default {

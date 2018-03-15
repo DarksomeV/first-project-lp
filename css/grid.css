@@ -3,6 +3,13 @@
 .row{
 		margin: 0 -15px;
 }
+.row::after{
+	content:'';
+	width: 100%;
+	display: block;
+	clear:both;
+	height: 0;
+}
 .col{
 	position: relative;
 	min-height: 1px;

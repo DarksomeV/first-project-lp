@@ -165,14 +165,13 @@ blockquote span,
 
 /* !=== HEADER ===! */
 .header{
-	padding: 25px 15px;
-	background: transparent;
-	font-size: 11px;
-	letter-spacing: 0.3em;
-	position: fixed;
-	top:0;
-	left:0;
-	right:0;
+  padding: 25px 0;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .header .header-logo{
@@ -184,6 +183,8 @@ blockquote span,
 	float: right;
 	color: rgba(255, 255, 255, .75);
 	text-transform: uppercase;   /*Сначала думал поставить в .header, (вместе с свойством color) но потом решил сюда, надеюсь это не ошибка, на то есть свои обоснования*/
+	font-size: 11px;
+  letter-spacing: 0.3em;
 }
 
 .header .header-nav li {
@@ -231,8 +232,9 @@ blockquote span,
 }
 
 /*!======ABOUT Studio=======!*/
-.team-item-info span{
-	display: block;
+
+.about-studio .team-wrapper{
+	margin-top: 105px;
 }
 
 .team-item .team-item-img{
@@ -251,6 +253,62 @@ blockquote span,
 
 .team-item .team-item-img:hover .team-item-skills{
 	opacity:1;
+}
+
+.team-item .team-item-info{
+	margin-top: 30px;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+}
+
+.team-item-info span{
+	display: block;
+}
+
+.team-item-info span + span{
+	margin-top: 13px;
+}
+
+.team-item-info .team-item-name{
+	font-size: 15px;
+}
+
+.team-item-info .team-item-role{
+	font-size: 12px;
+}
+
+/*WHY-CHOOSE-US*/
+
+.why-choose-us .advantage-wrapper .row + .row{
+	margin-top: 85px;
+}
+
+.advantage-content{
+	font-size: 15px;
+}
+
+.advantage-content .advantage-content-title{
+	margin-bottom: 30px;
+	font-family: 'Dosis',sans-serif;
+	font-weight: 400;
+}
+
+.advantage-content .advantage-icon{
+	font-size: 48px;
+	letter-spacing: 0.5em;
+	color: #111;
+	margin-bottom: 30px;
+}
+
+.advantage-content .advantage-title{
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: #111;
+}
+
+.advantage-content .advantage-content-description{
+	letter-spacing: 0;
+	line-height:26px;
 }
 /*===== Custom end =====*/
 

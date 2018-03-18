@@ -2,6 +2,11 @@
 *{
 	box-sizing: border-box;
 }
+
+*:focus{
+	outline:none;
+}
+
 body{
 	margin: 0;
 	background-color: #fff;
@@ -135,6 +140,7 @@ blockquote span,
 	text-transform: uppercase;
 	font-weight: 400;
 	font-family: 'Open Sans';
+	letter-spacing: .2em;
 }
 
 .btn.btn-default {
@@ -276,6 +282,24 @@ blockquote span,
 .team-item-info .team-item-role{
 	font-size: 12px;
 }
+
+/*----Services start-----*/
+
+#tabs .tabs-nav li {
+	float: left;
+	width: 20%;
+	outline:none;
+}
+
+#tabs .tabs-nav li span {
+	display: block;
+}
+
+#tabs .tabs-nav li.ui-state-active {
+	color: red;
+}
+
+/*----Services end-----*/
 
 /*WHY-CHOOSE-US*/
 

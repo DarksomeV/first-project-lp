@@ -186,7 +186,7 @@ blockquote span,
 	width: 100%;
 	border:1px solid #e5e5e5;
 	border-radius:2px;
-	height: 36px;
+	height: 40px;
 	font-size: 12px;
 	font-family: 'Open Sans';
 	font-weight: 400;
@@ -214,6 +214,16 @@ textarea.form-control{
 
 .form-control.error{
 	border-color:#f57e7e;
+}
+
+.form-info{
+	font-size: 11px;
+	font-weight: 400;
+	color:#aaa;
+}
+
+.form-info .fa{
+	font-size: 12px;
 }
 /* ===== Default component end ===== */
 /*Guide start*/
@@ -372,7 +382,7 @@ textarea.form-control{
 }
 /*Lets Talk End*/
 
-/*WHY-CHOOSE-US*/
+/*WHY-CHOOSE-US START*/
 
 .why-choose-us .advantage-wrapper .row + .row{
 	margin-top: 85px;
@@ -405,5 +415,57 @@ textarea.form-control{
 	letter-spacing: 0;
 	line-height:26px;
 }
+/*WHY-CHOOSE-US END*/
+/*LATEST NEWS START*/
+.latest-news .title a{
+	float:right;
+	font-size: 11px;
+	letter-spacing:0.4em;
+	color:#999999;
+}
+
+.latest-news .news-item .news-title{
+	margin: 30px 0;
+	font-family: 'Dosis';
+	text-transform: uppercase;
+}
+
+.latest-news .news-item .news-item-img img{
+	max-height:100%;
+	filter: grayscale(100%);
+	transition:filter 0.5s linear;
+}
+
+.latest-news .news-item .news-item-img img:hover{
+	filter: grayscale(0);
+}
+
+.latest-news .news-item .news-title a{
+	font-size: 15px;
+	letter-spacing: 0.2em;
+}
+
+.latest-news .news-item .news-title span{
+	display: block;
+	letter-spacing: 0.4em;
+	font-size: 11px;
+	color:#999;
+	margin-top: 12px;
+}
+
+.latest-news .news-item .news-description{
+	margin-bottom: 25px;
+}
+/*LATEST NEWS END*/
+
+/*Subscribe start*/
+.subscribe form .form-control{
+	max-width:290px;
+}
+
+.subscribe .form-info{
+	margin-top: 17px;
+}
+/*Subscribe end*/
 /*===== Custom end =====*/
 

@@ -382,6 +382,64 @@ textarea.form-control{
 }
 /*Lets Talk End*/
 
+/*PORTFOLIO START*/
+.portfolio .portfolio-text{
+	max-width:752px;
+	margin:auto;
+}
+
+.portfolio-tabs-wrap{
+	margin-top: 75px;
+}
+
+#tabs-portfolio{
+	width:100%;
+	text-align: center;
+}
+
+#tabs-portfolio ul{
+	display: inline-block;
+	margin-bottom: 48px;
+}
+
+#tabs-portfolio .tabs-nav li{
+	float: left;
+	outline:none;
+	font-size: 13px;
+	font-family: 'Dosis';
+	font-weight: 400;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color:rgba(17, 17, 17, .5);
+}
+
+#tabs-portfolio .tabs-nav li.ui-state-active{
+	color:rgba(17, 17, 17, 1);
+}
+
+#tabs-portfolio .tabs-nav li + li{
+	margin-left: 65px;
+}
+
+#tabs-portfolio .portfolio-item{
+	padding:4px;
+	width:33.333%;
+	float:left;
+}
+
+#tabs-portfolio .portfolio-item img{
+	width:100%;
+	filter: grayscale(100%);
+	transition:filter 0.5s linear;
+}
+
+#tabs-portfolio .portfolio-item img:hover{
+	filter: grayscale(0);
+}
+
+
+/*PORTFOLIO END*/
+
 /*WHY-CHOOSE-US START*/
 
 .why-choose-us .advantage-wrapper .row + .row{

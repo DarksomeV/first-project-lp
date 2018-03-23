@@ -44,6 +44,7 @@ button {
 	outline: none;
 	border: none;
 	cursor: pointer;
+	padding: 0;
 }
 textarea{
 	resize: none;
@@ -77,6 +78,11 @@ blockquote {
 
 .bg-grey {
 	background-color: #f8f8f8;
+}
+
+.m-auto{
+	float:none;
+	margin:0 auto;
 }
 /* ===== Default classes end */
 /* ===== Default component start ===== */
@@ -237,6 +243,32 @@ textarea.form-control{
 	text-transform: uppercase;
 	color:rgba(17, 17, 17, .5);
 }
+
+.rhomb-icon{
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	text-align: center;
+	line-height: 23px;
+	border-radius:2px;
+	font-size: 14px;
+	transform: rotate(45deg);
+}
+
+.rhomb-icon i{
+		transform: rotate(-45deg);
+}
+
+.rhomb-icon.black-icon{
+	color:#fff;
+	background-color: #111;
+}
+
+.rhomb-icon.transparent-icon{
+	color:#111;
+	background-color: transparent;
+	border:1px solid #111;
+}
 /* ===== Default component end ===== */
 /*Guide start*/
 .guide-section form .form-control{
@@ -341,6 +373,8 @@ textarea.form-control{
 	margin-top: 30px;
 	text-transform: uppercase;
 	letter-spacing: 0.4em;
+	font-family: 'Dosis';
+	font-weight: 400;
 }
 
 .team-item-info span{
@@ -368,6 +402,11 @@ textarea.form-control{
 	margin-bottom: 35px;
 }
 
+#tabs .tabs-nav{
+	overflow:hidden;
+	margin-bottom: 75px;
+}
+
 #tabs .tabs-nav li{	
 	width: 20%;
 	font-size: 14px;
@@ -384,10 +423,6 @@ textarea.form-control{
 
 #tabs .tabs-nav li.ui-state-active {
 	color: rgba(17, 17, 17, 1);
-}
-
-#tabs .row .col{  /*Ужастный електор, но обращение через список, строчку и прочее не работает. Буду благодарен если посоветуете решение*/
-	margin-top: 75px;
 }
 
 /*----Services end-----*/
@@ -430,8 +465,12 @@ textarea.form-control{
 }
 
 #tabs-portfolio ul{
-	display: inline-block;
 	margin-bottom: 48px;
+}
+
+#tabs-portfolio .tabs-nav li{
+	float:none;
+	display: inline-block;
 }
 
 #tabs-portfolio .tabs-nav li.ui-state-active{
@@ -467,46 +506,158 @@ textarea.form-control{
 	margin-top: 85px;
 }
 
-.advantage-content{
+.advantage{
 	font-size: 15px;
 }
 
-.advantage-content .advantage-content-title{
+.advantage .advantage-title{
 	margin-bottom: 30px;
 	font-family: 'Dosis',sans-serif;
 	font-weight: 400;
 }
 
-.advantage-content .advantage-icon{
+.advantage .advantage-icon{
 	font-size: 48px;
 	letter-spacing: 0.5em;
 	color: #111;
 	margin-bottom: 30px;
 }
 
-.advantage-content .advantage-title{
+.advantage .advantage-title{
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 	color: #111;
 }
 
-.advantage-content .advantage-content-description{
+.advantage .advantage-description{
 	letter-spacing: 0;
 	line-height:26px;
 }
 /*WHY-CHOOSE-US END*/
 
 /*LIKE OUR WORKS START*/
-.like-our-works .like-our-works-btn button{
-	font-size: 14px;
-	line-height: 1.857;
-	padding:12px 35px;
-	background-color: #cfcfcf;
-}
-.like-our-works .like-our-works-btn button:hover{
-background-color: #dcdcdc;
-}
 /*LIKE OUR WORKS END*/
+
+/*REVIEWS CAROUSEL START*/
+.reviews-carousel{
+	padding:135px 0;
+	overflow:hidden;
+}
+
+.slide-content .icon{
+	font-size: 32px;
+	color:#fff;
+}
+
+.slide-content .title{
+	font-family: 'Dosis';
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
+	letter-spacing: 0.3em;
+	margin-bottom: 38px;
+	margin-top: 22px;
+}
+
+.slide-content p{
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 30px;
+	color:rgba(255, 255, 255, .75);
+} 
+
+.slide-content .review-author{
+	display: inline-block;
+	font-size: 11px;
+	line-height: 38px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color:rgba(255, 255, 255, .3);
+	margin-top: 27px;
+}
+
+.slick-dots{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom:30px;
+}
+
+.slick-dots li{
+	display: inline-block;
+	width: 9px;
+	height:9px;
+	background-color: rgba(255, 255, 255, .8);
+	border:1px solid #000;
+	border-radius:50%;
+	cursor:pointer;
+}
+
+.slick-dots li button{
+	display: none;
+}
+
+.slick-dots li.slick-active{
+	background-color: #000;
+	border-color:rgba(255, 255, 255, .8);
+}
+
+.slick-dots li + li{
+	margin-left: 5px;
+}
+
+.slick-arrow{
+	position: absolute;
+	height:100%;
+	top:0;
+	z-index:1;
+	width:90px;
+	cursor:pointer;
+}
+
+.slick-arrow.slick-prev{
+	left:0;
+} 
+
+.slick-arrow.slick-next{
+	right:0;
+}
+
+.slick-arrow.slick-next .carousel-button{
+	right:0;
+	margin-right: -31px;
+}
+
+.slick-arrow .carousel-button{
+	width: 63px;
+	height: 63px;
+	background: #fff;
+	text-align: center;
+	line-height: 63px;
+	transform:rotate(-45deg);
+	position:absolute;
+	top:50%;
+	margin-left: -32px;
+	margin-top: -31px;
+}
+
+.slick-arrow .carousel-button .fa{
+	position: absolute;
+	transform:rotate(45deg);
+	font-size: 10px;
+}
+
+.slick-arrow.slick-prev .carousel-button .fa{
+	bottom:14px;
+	right:17px;
+}
+
+.slick-arrow.slick-next .carousel-button .fa{
+	left:14px;
+	top:17px;
+}
+/*REVIEWS CAROUSEL END*/
 
 /*LATEST NEWS START*/
 .latest-news .title a{
@@ -563,5 +714,78 @@ background-color: #dcdcdc;
 	margin-right: 3px;
 }
 /*Subscribe end*/
+
+/*CONTACTS START*/
+.contact-item .contact-item-content{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.contact-item .contact-item-content{
+	margin-left: 10px;
+}
+
+.contact-item .contact-item-content span{
+	display: block;
+}
+
+.contact-item .contact-item-content .contact-title{
+	font-family: 'Dosis';
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.3em;
+	color:#777;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.contact-item .contact-item-content .contact-date{
+	font-size: 15px;
+	line-height:24px;
+	letter-spacing: 0;
+	color:#444;
+	font-weight: 300;
+}
+/*CONTACTS END*/
+
+/*FOOTER START*/
+.footer{
+	padding:140px 0 59px;
+}
+
+.footer .footer-nav{
+	margin-top: 24px;
+}
+
+.footer .footer-nav li+li{
+	margin-left: 15px;
+}
+
+.footer .copyright span{
+	display: block;
+}
+
+.footer .copyright{
+	line-height: 24px;
+	font-weight: 400;
+	margin-top: 110px;
+}
+
+.footer .copyright .copyright-author{
+	font-family: 'Dosis';
+	font-size: 12px;
+	letter-spacing: 0.5em;
+	color:#111111;
+	text-transform: uppercase;
+}
+
+.footer .copyright .copyright-wish{
+	font-family: 'Open Sans';
+	letter-spacing: 0;
+	font-size: 11px;
+	color:#999999;
+}
+/*FOOTER END*/
+
 /*===== Custom end =====*/
 

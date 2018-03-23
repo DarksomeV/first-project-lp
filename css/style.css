@@ -1,64 +1,64 @@
 /* ===== Reset start ===== */
 *{
-	box-sizing: border-box;
+box-sizing: border-box;
 }
 
 *:focus{
-	outline:none;
+outline:none;
 }
 
 body{
-	margin: 0;
-	background-color: #fff;
-	color: #777;
-	font: 300 15px/1 'Open Sans', sans-serif;
+margin: 0;
+background-color: #fff;
+color: #777;
+font: 300 15px/1 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
-	margin: 0;
-	font-weight: normal;
+margin: 0;
+font-weight: normal;
 }
 p {
-	margin: 0;
+margin: 0;
 }
 a{
-	color: inherit;
-	text-decoration: none;
+color: inherit;
+text-decoration: none;
 }
 a:hover, a:active{
-	text-decoration: none;
+text-decoration: none;
 }
 ul, ol{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 img {
-	max-width: 100%;
+max-width: 100%;
 }
 input, textarea, button{
-	outline: none;
-	border:none;
+outline: none;
+border:none;
 
 }
 button {
-	outline: none;
-	border: none;
-	cursor: pointer;
-	padding: 0;
+outline: none;
+border: none;
+cursor: pointer;
+padding: 0;
 }
 textarea{
-	resize: none;
+resize: none;
 }
 input[type="submit"]{
-	cursor: pointer;
+cursor: pointer;
 }
 blockquote {
-	margin: 0;
+margin: 0;
 }
 /* ===== Reset end ===== */
 /* ===== Default classes start */
 /* 
-	text color, text align, float, backgrounds colors, text transform
+text color, text align, float, backgrounds colors, text transform
 */
 .text-center {
 	text-align: center;
@@ -87,12 +87,12 @@ blockquote {
 /* ===== Default classes end */
 /* ===== Default component start ===== */
 /* 
-	Buttons, text, title, section, small-section header, footer,
-	form elements, icons, tabs, blockquote, container 
+Buttons, text, title, section, small-section header, footer,
+form elements, icons, tabs, blockquote, container 
 */
 .default-section {
 	padding: 135px 0;
-/*	overflow: hidden;*/
+	/*	overflow: hidden;*/
 }
 
 .small-section {
@@ -233,17 +233,6 @@ textarea.form-control{
 	font-size: 12px;
 }
 
-.tabs-nav li{
-	float: left;
-	outline:none;
-	font-size: 13px;
-	font-family: 'Dosis';
-	font-weight: 400;
-	letter-spacing: 0.4em;
-	text-transform: uppercase;
-	color:rgba(17, 17, 17, .5);
-}
-
 .rhomb-icon{
 	display: inline-block;
 	width: 23px;
@@ -256,7 +245,7 @@ textarea.form-control{
 }
 
 .rhomb-icon i{
-		transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .rhomb-icon.black-icon{
@@ -279,13 +268,13 @@ textarea.form-control{
 
 /* !=== HEADER ===! */
 .header{
-  padding: 25px 0;
-  background: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
+	padding: 25px 0;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
 }
 
 .header .header-logo{
@@ -298,7 +287,7 @@ textarea.form-control{
 	color: rgba(255, 255, 255, .75);
 	text-transform: uppercase;   /*Сначала думал поставить в .header, (вместе с свойством color) но потом решил сюда, надеюсь это не ошибка, на то есть свои обоснования*/
 	font-size: 11px;
-  letter-spacing: 0.3em;
+	letter-spacing: 0.3em;
 }
 
 .header .header-nav li {
@@ -405,6 +394,17 @@ textarea.form-control{
 #tabs .tabs-nav{
 	overflow:hidden;
 	margin-bottom: 75px;
+}
+
+.tabs-nav li{
+	float: left;
+	outline:none;
+	font-size: 13px;
+	font-family: 'Dosis';
+	font-weight: 400;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color:rgba(17, 17, 17, .5);
 }
 
 #tabs .tabs-nav li{	

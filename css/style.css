@@ -1,59 +1,58 @@
 /* ===== Reset start ===== */
 *{
-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *:focus{
-outline:none;
+	outline:none;
 }
 
 body{
-margin: 0;
-background-color: #fff;
-color: #777;
-font: 300 15px/1 'Open Sans', sans-serif;
+	margin: 0;
+	background-color: #fff;
+	color: #777;
+	font: 300 15px/1 'Open Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6{
-margin: 0;
-font-weight: normal;
+	margin: 0;
+	font-weight: normal;
 }
 p {
-margin: 0;
+	margin: 0;
 }
 a{
-color: inherit;
-text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 a:hover, a:active{
-text-decoration: none;
+	text-decoration: none;
 }
 ul, ol{
-list-style: none;
-padding: 0;
-margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 img {
-max-width: 100%;
+	max-width: 100%;
 }
 input, textarea, button{
-outline: none;
-border:none;
-
+	outline: none;
+	border:none;
 }
 button {
-outline: none;
-border: none;
-cursor: pointer;
-padding: 0;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
 }
 textarea{
-resize: vertical;
+	resize: vertical;
 }
 input[type="submit"]{
-cursor: pointer;
+	cursor: pointer;
 }
 blockquote {
-margin: 0;
+	margin: 0;
 }
 /* ===== Reset end ===== */
 /* ===== Default classes start */
@@ -122,9 +121,11 @@ form elements, icons, tabs, blockquote, container
 	text-transform: uppercase;
 	color: #111;
 }
+
 .title.title-white {
 	color: #fff;
 }
+
 .title.section-title {
 	font-size: 18px;
 	letter-spacing: .5em; /* 0.5em = .5em */
@@ -132,6 +133,7 @@ form elements, icons, tabs, blockquote, container
 	font-weight: 400;
 	line-height: 18px;
 }
+
 .title.section-title-light {
 	font-size: 18px;
 	letter-spacing: .3em;
@@ -151,6 +153,7 @@ blockquote,
 	font-weight: 300;
 	line-height: 1.6;
 }
+
 blockquote span, 
 .blockquote span {
 	font-size: 11px;
@@ -281,11 +284,11 @@ textarea.form-control{
 	cursor: pointer;
 }
 /* ===== Default component end ===== */
-/*Guide start*/
+/*GUIDE START*/
 .guide-section form .form-control{
 	margin-bottom: 10px;
 }
-/*Guide end*/
+/*GUIDE END*/
 /* ===== Custom start =====*/
 
 /* !=== HEADER ===! */
@@ -307,7 +310,7 @@ textarea.form-control{
 .header .header-nav{
 	float: right;
 	color: rgba(255, 255, 255, .75);
-	text-transform: uppercase;   /*Сначала думал поставить в .header, (вместе с свойством color) но потом решил сюда, надеюсь это не ошибка, на то есть свои обоснования*/
+	text-transform: uppercase;   
 	font-size: 11px;
 	letter-spacing: 0.3em;
 }
@@ -321,7 +324,7 @@ textarea.form-control{
 	margin-left: 32px;
 }
 
-/*!=== INNER ===!*/
+/*INNER START*/
 .inner{
 	background: rgba(0, 0, 0, .3) url(../img/bg-inner.jpg) no-repeat center / cover;
 	background-blend-mode: multiply;
@@ -370,7 +373,9 @@ textarea.form-control{
   bottom: 3px;
   right: 3px;
 }
-/*!======ABOUT Studio=======!*/
+/*INNER END*/
+
+/*ABOUT STUDIO START*/
 
 .about-studio .team-wrapper{
 	margin-top: 105px;
@@ -495,8 +500,9 @@ textarea.form-control{
 .team-item-info .team-item-role{
 	font-size: 12px;
 }
+/*ABOUT STUDIO END*/
 
-/*----Services start-----*/
+/*SERVICES START*/
 .services{
 	border-top:1px solid #ececec;
 }
@@ -539,15 +545,14 @@ textarea.form-control{
 	color: rgba(17, 17, 17, 1);
 }
 
-/*----Services end-----*/
+/*SERVICES END*/
 
 
-/*Lets Talk Start*/
+/*LETS TALK START*/
 .lets-talk-content{
 	padding: 140px 0;
 }
 
-/*Lets Talk Start*/
 .lets-talk-content p{
 	color: rgba(255, 255, 255, .7);
 	margin-bottom: 35px;
@@ -556,7 +561,7 @@ textarea.form-control{
 .lets-talk .lets-talk-img{
 	margin-top: -32px;
 }
-/*Lets Talk End*/
+/*LETS TALK END*/
 
 /*PORTFOLIO START*/
 .portfolio{
@@ -610,7 +615,6 @@ textarea.form-control{
 #tabs-portfolio .portfolio-item img:hover{
 	filter: grayscale(0);
 }
-
 
 /*PORTFOLIO END*/
 
@@ -817,7 +821,7 @@ textarea.form-control{
 }
 /*LATEST NEWS END*/
 
-/*Subscribe start*/
+/*SUBSCRIBE START*/
 .subscribe form .form-control{
 	max-width:290px;
 }
@@ -829,7 +833,7 @@ textarea.form-control{
 .subscribe .form-info i{
 	margin-right: 3px;
 }
-/*Subscribe end*/
+/*SUBSCRIBE END*/
 
 /*CONTACTS START*/
 .contact-items-wrapper{

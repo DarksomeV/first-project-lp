@@ -47,7 +47,7 @@ cursor: pointer;
 padding: 0;
 }
 textarea{
-resize: none;
+resize: vertical;
 }
 input[type="submit"]{
 cursor: pointer;
@@ -83,6 +83,14 @@ text color, text align, float, backgrounds colors, text transform
 .m-auto{
 	float:none;
 	margin:0 auto;
+}
+
+.pull-left{
+	float: left;
+}
+
+.pill-right{
+	float: right;
 }
 /* ===== Default classes end */
 /* ===== Default component start ===== */
@@ -210,7 +218,7 @@ blockquote span,
 }
 
 textarea.form-control{
-	min-height: 82px;
+	min-height: 90px;
 	padding-top: 10px;
 }
 
@@ -716,6 +724,10 @@ textarea.form-control{
 /*Subscribe end*/
 
 /*CONTACTS START*/
+.contact-items-wrapper{
+	margin-bottom: 80px;
+}
+
 .contact-item .contact-item-content{
 	display: inline-block;
 	vertical-align: middle;
@@ -746,7 +758,29 @@ textarea.form-control{
 	color:#444;
 	font-weight: 300;
 }
+
+.contact-form{
+	margin: 0 -5px;
+	overflow: hidden;
+}
+
+.contact-form .form-col{
+	float: left;
+	width: 50%;
+	padding: 0 5px;
+}
+
+.contact-form .form-control + .form-control{
+	margin-top: 10px;
+}
 /*CONTACTS END*/
+
+/*MAP START*/
+#map{
+	height: 400px;
+	
+}
+/*MAP END*/
 
 /*FOOTER START*/
 .footer{

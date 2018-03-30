@@ -657,12 +657,27 @@
 						</div>
 						<!-- /contact-items-wrapper -->
 						<form class="contact-form">
-							
+							<div class="form-col">
+								<input type="text" name="user-name" id="user-name" class="form-control" placeholder="Name">
+								<input type="text" name="useremaile" id="user-email" class="form-control" placeholder="Email">
+							</div>
+							<div class="form-col">
+								<textarea name="user-message" id="user-message" placeholder="Message" class="form-control"></textarea>
+							</div>
+							<div class="form-info">
+									<span><i class="fa fa-info-circle"></i>Please trust us, we will never send you spam</span>
+							</div>
+
 						</form>
 						<!-- /contact-form -->
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="map-container"><!-- AIzaSyBjuFEnszG3V9A3XYnCQ_18GbE7BDlsI6Y -->
+		<div id="map">
+			
 		</div>
 	</div>
 	<!-- /MAIN -->
@@ -690,6 +705,12 @@
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	<!-- JQuerryUi -->
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Google map api -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjuFEnszG3V9A3XYnCQ_18GbE7BDlsI6Y&callback=initMap"    async defer></script>
+	
+	<!-- Init google map -->
+	<script src="js/google-map.js"></script>
+
 	<!-- Plugins -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 

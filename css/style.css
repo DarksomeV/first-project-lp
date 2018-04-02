@@ -102,6 +102,18 @@ form elements, icons, tabs, blockquote, container
 	/*	overflow: hidden;*/
 }
 
+@media (max-width: 767px) {
+	.default-section{
+		padding: 70px 0;
+}
+}
+
+@media (max-width: 767px) {
+	.default-section{
+		padding: 35px 0;
+}
+}
+
 .small-section {
 	padding: 70px 0;
 }
@@ -341,7 +353,9 @@ textarea.form-control{
 	.header-nav{
 		display: none;
 	}
-	
+	.header .header-logo{
+		line-height: 41px;
+	}
 } 
 
 /*HEADER END*/
@@ -402,6 +416,24 @@ textarea.form-control{
 		text-indent:.7em;
 		margin-bottom: 50px;
 }
+}
+
+@media (max-width: 767px) {
+	.inner{
+		height:auto;
+		padding: 175px 0;
+	}
+}
+
+@media (max-width: 479px) {
+	.title.inner-title{
+		font-size: 21px;
+		letter-spacing: 1em;
+    text-indent: 1em;
+	}
+	.inner-description{
+		font-size: 16px;
+	}
 }
 /*INNER END*/
 
@@ -539,6 +571,29 @@ textarea.form-control{
 		font-size: 9px;
 }
 }
+
+@media (max-width: 767px) {
+	.about-studio .col-sm-12:last-child{
+		margin-top:20px;
+	}
+	.about-studio .team-wrapper{
+		margin-top: 35px;
+	}
+	.team-wrapper .team-item{
+		text-align: center;
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 767px) {
+	.about-studio{
+		padding-top: 40px;
+	}
+	.about-studio .title{
+		margin-bottom: 35px;
+	}
+}
+
 /*ABOUT STUDIO END*/
 
 /*SERVICES START*/
@@ -597,6 +652,28 @@ textarea.form-control{
 	}
 }
 
+@media (max-width: 767px){
+	#tabs .tabs-nav li{
+		width: 33.333%;
+	}
+	#tabs .tabs-nav li:nth-child(4), #tabs .tabs-nav li:nth-child(5){
+		margin-top: 30px;
+	}
+	#tabs .row .col-sm-12:last-child{
+		margin-top:20px;
+	}
+}
+
+@media (max-width: 479px){
+	#tabs .tabs-nav li{
+		float:left;
+		width: 50%;
+	}
+	#tabs .tabs-nav li:nth-child(3), #tabs .tabs-nav li:nth-child(4), #tabs .tabs-nav li:nth-child(5){
+		margin-top: 30px;
+	}
+}
+
 /*SERVICES END*/
 
 
@@ -617,6 +694,14 @@ textarea.form-control{
 @media (max-width: 991px){
 	.lets-talk-content{
 		padding: 70px 0;
+	}
+}
+
+@media (max-width: 479px) {
+	.lets-talk-content .btn{
+		display: block;
+		width: 100%;
+    margin-top: 15px;
 	}
 }
 
@@ -678,6 +763,20 @@ textarea.form-control{
 @media (max-width:991px) {
 	#tabs-portfolio .portfolio-item{
 		width:50%;
+	}
+}
+
+@media (max-width: 767px){
+	#tabs-portfolio .tabs-nav li + li{
+		margin-left: 0;
+		margin-top:10px;
+	}
+	#tabs-portfolio .tabs-nav li{
+		width: 100%;
+		font-size: 16px;
+	}
+	#tabs-portfolio .portfolio-item{
+		width:100%;
 	}
 }
 /*PORTFOLIO END*/
@@ -851,6 +950,37 @@ textarea.form-control{
 	left:14px;
 	top:17px;
 }
+
+@media (max-width:991px) {
+	.slide-content p{
+		max-width:680px;
+	}
+}
+
+@media (max-width:767px) {
+	.slide-content p{
+		max-width:500px;
+	}
+}
+
+@media (max-width:479px) {
+	.slide-content p{
+		max-width: 250px;
+    font-size: 14px;
+	}
+	.slick-arrow .carousel-button{
+		width: 46px;
+    height: 46px;
+	}
+	.slick-arrow.slick-prev .carousel-button .fa{
+		bottom: 2px;
+    right: 7px;
+	}
+	.slick-arrow.slick-next .carousel-button .fa{
+		left: 3px;
+    top: 4px;
+	}
+}
 /*REVIEWS CAROUSEL END*/
 
 /*LATEST NEWS START*/
@@ -917,6 +1047,23 @@ textarea.form-control{
 
 .subscribe .form-info i{
 	margin-right: 3px;
+}
+
+@media (max-width: 479px) {
+	.subscribe .btn{
+		display: block;
+		width: 100%;
+    margin-top: 15px;
+	}
+	.subscribe .form-info{
+		margin-top: 13px;
+	}
+}
+
+@media (max-width: 479px) {
+	.subscribe form .form-control{
+		max-width: 100%;
+	}
 }
 /*SUBSCRIBE END*/
 
@@ -985,6 +1132,48 @@ textarea.form-control{
 
 .contact-form .form-send-info .form-info i{
 	margin-right: 5px;
+}
+
+@media (max-width: 767px){
+	.contacts{
+		padding: 50px 0;
+	}
+	.contacts .title{
+		margin-bottom: 50px;
+	}
+	.contact-form .form-col{
+    width: 100%;
+	}
+	.contact-form .form-col + .form-col{
+		margin-top: 10px;
+	}
+	.contact-items-wrapper{
+		margin-bottom: 50px;
+	}
+	.contact-items-wrapper .row .col{
+		display: block;
+    width: 100%;
+    text-align: center;
+	}
+	.contact-items-wrapper .contact-item{
+		padding: 18px 0;
+	}
+	.contact-items-wrapper .contact-item-icon{
+		margin: 0 auto;
+		display: block;
+	}
+	.contact-item .contact-item-content{
+		margin-left: 0;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 479px) {
+	.form-send-info .btn{
+		display: block;
+		width: 100%;
+    margin-top: 15px;
+	}
 }
 /*CONTACTS END*/
 
@@ -1109,6 +1298,6 @@ textarea.form-control{
 }
 
 /*Только если сильно нужно для моб. телефонов 320X*/
-/*@media (max-width: 479px) {
+@media (max-width: 479px) {
 	
-}*/
+}

@@ -49,8 +49,19 @@
   transition:all .5s ease;
 }
 
-.slicknav_btn:hover .slicknav_icon-bar{ 
-  width: 80%;
+.slicknav_btn.slicknav_open:hover .slicknav_icon-bar:nth-child(2){ 
+  width: 0;
+}
+.slicknav_btn.slicknav_open:hover .slicknav_icon-bar:first-child{ 
+  transform:rotate(45deg);
+  transform-origin: left;
+}
+.slicknav_btn.slicknav_open:hover .slicknav_icon-bar:last-child{ 
+  transform:rotate(-45deg);
+  transform-origin: left;
+}
+.slicknav_open .slicknav_icon{
+  width: 20px;
 }
 .slicknav_menu:before {
   content: " ";

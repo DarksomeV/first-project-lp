@@ -161,6 +161,12 @@ blockquote span,
 	letter-spacing: .2em;
 }
 
+@media (max-width: 991px) {
+	blockquote{
+		margin-bottom: 30px;
+	}
+}
+
 .btn {
 	display: inline-block;
 	padding: 12px 20px;
@@ -324,6 +330,22 @@ textarea.form-control{
 	margin-left: 32px;
 }
 
+.slicknav_menu{
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.slicknav_menu{
+		display: block;
+	}
+	.header-nav{
+		display: none;
+	}
+	
+} 
+
+/*HEADER END*/
+
 /*INNER START*/
 .inner{
 	background: rgba(0, 0, 0, .3) url(../img/bg-inner.jpg) no-repeat center / cover;
@@ -372,6 +394,14 @@ textarea.form-control{
   position: absolute;
   bottom: 3px;
   right: 3px;
+}
+
+@media (max-width: 991px) {
+	.title.inner-title{
+		letter-spacing:.7em;
+		text-indent:.7em;
+		margin-bottom: 50px;
+}
 }
 /*INNER END*/
 
@@ -500,6 +530,15 @@ textarea.form-control{
 .team-item-info .team-item-role{
 	font-size: 12px;
 }
+
+@media (max-width: 991px) {
+	.team-item-info .team-item-name{
+		font-size: 12px;
+}
+	.team-item-info .team-item-role{
+		font-size: 9px;
+}
+}
 /*ABOUT STUDIO END*/
 
 /*SERVICES START*/
@@ -545,6 +584,19 @@ textarea.form-control{
 	color: rgba(17, 17, 17, 1);
 }
 
+#tabs .tabs-panel{
+	clear:both;
+}
+
+@media (max-width: 991px){
+	#tabs .tabs-nav li{
+		font-size: 12px;
+	}
+	#tabs .tabs-nav{
+		margin-bottom: 40px;
+	}
+}
+
 /*SERVICES END*/
 
 
@@ -561,6 +613,13 @@ textarea.form-control{
 .lets-talk .lets-talk-img{
 	margin-top: -32px;
 }
+
+@media (max-width: 991px){
+	.lets-talk-content{
+		padding: 70px 0;
+	}
+}
+
 /*LETS TALK END*/
 
 /*PORTFOLIO START*/
@@ -616,6 +675,11 @@ textarea.form-control{
 	filter: grayscale(0);
 }
 
+@media (max-width:991px) {
+	#tabs-portfolio .portfolio-item{
+		width:50%;
+	}
+}
 /*PORTFOLIO END*/
 
 /*WHY-CHOOSE-US START*/
@@ -650,6 +714,16 @@ textarea.form-control{
 .advantage .advantage-description{
 	letter-spacing: 0;
 	line-height:26px;
+}
+
+@media (max-width:991px) {
+	.advantage{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.why-choose-us .advantage-wrapper .row + .row{
+		margin-top: 0px;
+}
 }
 /*WHY-CHOOSE-US END*/
 
@@ -818,6 +892,17 @@ textarea.form-control{
 
 .latest-news .news-item .news-description{
 	margin-bottom: 25px;
+}
+
+@media (max-width: 991px) {
+	.latest-news .news-item .news-item-img img{
+		width:100%;
+	}
+	.latest-news .news-item{
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom:1px solid #e5e5e5;
+	}
 }
 /*LATEST NEWS END*/
 
@@ -1000,3 +1085,30 @@ textarea.form-control{
 
 /*===== Custom end =====*/
 
+
+/*Media*/
+/*Десктопы и ноутбуки >1300*/
+/*Нетбуки, ноутбуки и планшеті альбомной ориентации 992px...1200px*/
+@media (max-width: 1200px) {
+
+}
+
+/*Планшеты 7> в портретной ориентации и планшеты 7 в альбомной ориентации 768-991px*/
+@media (max-width: 991px) {
+	
+}
+
+/*Планшеты 7 в портретной ориентации и планшеты и телефоны <7 в альбомной ориентации 577-767*/
+@media (max-width: 767px) {
+	
+}
+
+/*Все мобильные телефоны в портретной ориентации и альбомной ориентации*/
+@media (max-width: 576px) {
+	
+}
+
+/*Только если сильно нужно для моб. телефонов 320X*/
+/*@media (max-width: 479px) {
+	
+}*/

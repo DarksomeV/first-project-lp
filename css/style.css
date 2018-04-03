@@ -88,7 +88,7 @@ text color, text align, float, backgrounds colors, text transform
 	float: left;
 }
 
-.pill-right{
+.pull-right{
 	float: right;
 }
 /* ===== Default classes end */
@@ -309,7 +309,7 @@ textarea.form-control{
 /*GUIDE END*/
 /* ===== Custom start =====*/
 
-/* !=== HEADER ===! */
+/*HEADER START*/
 .header{
 	padding: 25px 0;
 	background: transparent;
@@ -358,6 +358,11 @@ textarea.form-control{
 	}
 } 
 
+@media (max-width: 576px) {
+	.header{
+		padding: 13px 0;
+	}
+}
 /*HEADER END*/
 
 /*INNER START*/
@@ -425,10 +430,16 @@ textarea.form-control{
 	}
 }
 
+@media (max-width: 576px) {
+	.title.inner-title{
+		font-size: 26px;
+	}
+}
+
 @media (max-width: 479px) {
 	.title.inner-title{
-		font-size: 21px;
-		letter-spacing: 1em;
+		font-size: 19px;
+		letter-spacing: normal;
     text-indent: 1em;
 	}
 	.inner-description{
@@ -438,7 +449,6 @@ textarea.form-control{
 /*INNER END*/
 
 /*ABOUT STUDIO START*/
-
 .about-studio .team-wrapper{
 	margin-top: 105px;
 }
@@ -593,7 +603,6 @@ textarea.form-control{
 		margin-bottom: 35px;
 	}
 }
-
 /*ABOUT STUDIO END*/
 
 /*SERVICES START*/
@@ -673,7 +682,6 @@ textarea.form-control{
 		margin-top: 30px;
 	}
 }
-
 /*SERVICES END*/
 
 
@@ -697,6 +705,14 @@ textarea.form-control{
 	}
 }
 
+@media (max-width: 576px) {
+	.lets-talk-content .btn{
+		display: block;
+		margin: 0 auto;
+
+	}
+}
+
 @media (max-width: 479px) {
 	.lets-talk-content .btn{
 		display: block;
@@ -704,7 +720,6 @@ textarea.form-control{
     margin-top: 15px;
 	}
 }
-
 /*LETS TALK END*/
 
 /*PORTFOLIO START*/
@@ -963,6 +978,13 @@ textarea.form-control{
 	}
 }
 
+@media (max-width: 576px) {
+	.slide-content p{
+		max-width:350px;
+	}
+}
+
+
 @media (max-width:479px) {
 	.slide-content p{
 		max-width: 250px;
@@ -1034,6 +1056,21 @@ textarea.form-control{
 		border-bottom:1px solid #e5e5e5;
 	}
 }
+
+@media (max-width: 576px) {
+	.latest-news .news-item .btn{
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 479px) {
+	.latest-news .news-item .btn{
+		display: block;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
 /*LATEST NEWS END*/
 
 /*SUBSCRIBE START*/
@@ -1058,9 +1095,6 @@ textarea.form-control{
 	.subscribe .form-info{
 		margin-top: 13px;
 	}
-}
-
-@media (max-width: 479px) {
 	.subscribe form .form-control{
 		max-width: 100%;
 	}

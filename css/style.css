@@ -105,13 +105,13 @@ form elements, icons, tabs, blockquote, container
 @media (max-width: 767px) {
 	.default-section{
 		padding: 70px 0;
-}
+	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 	.default-section{
 		padding: 35px 0;
-}
+	}
 }
 
 .small-section {
@@ -401,7 +401,6 @@ textarea.form-control{
 	color:rgba(254, 254, 254, .68);
 }
 
-
 .inner .inner-item-scroll{
 	position: absolute;
 	bottom:20px;
@@ -420,7 +419,7 @@ textarea.form-control{
 		letter-spacing:.7em;
 		text-indent:.7em;
 		margin-bottom: 50px;
-}
+	}
 }
 
 @media (max-width: 767px) {
@@ -594,7 +593,7 @@ textarea.form-control{
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 	.about-studio{
 		padding-top: 40px;
 	}
@@ -836,19 +835,9 @@ textarea.form-control{
 	}
 	.why-choose-us .advantage-wrapper .row + .row{
 		margin-top: 0px;
-}
-}
-
-@media (max-width: 991px) {
-	.advantage{
-		text-align: center;
-		margin-bottom: 30px;
 	}
-	.advantage .advantage-icon {
+		.advantage .advantage-icon {
 		letter-spacing: 0;
-	}
-	.why-choose-us .advantage-wrapper .row + .row{
-		margin-top: 0px;
 	}
 }
 
@@ -1003,7 +992,6 @@ textarea.form-control{
 		max-width:350px;
 	}
 }
-
 
 @media (max-width:479px) {
 	.slide-content p{
@@ -1236,7 +1224,6 @@ textarea.form-control{
 }
 
 @media (max-width: 479px) {
-
 	.contact-form .form-send-info {
 		margin-top: 5px;
 	}

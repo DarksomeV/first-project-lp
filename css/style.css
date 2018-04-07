@@ -439,7 +439,6 @@ textarea.form-control{
 @media (max-width: 479px) {
 	.title.inner-title{
 		font-size: 19px;
-		letter-spacing: normal;
     text-indent: 1em;
 	}
 	.inner-description{
@@ -676,9 +675,9 @@ textarea.form-control{
 @media (max-width: 479px){
 	#tabs .tabs-nav li{
 		float:left;
-		width: 50%;
+		width: 100%;
 	}
-	#tabs .tabs-nav li:nth-child(3), #tabs .tabs-nav li:nth-child(4), #tabs .tabs-nav li:nth-child(5){
+	#tabs .tabs-nav li + li{
 		margin-top: 30px;
 	}
 }
@@ -839,9 +838,30 @@ textarea.form-control{
 		margin-top: 0px;
 }
 }
+
+@media (max-width: 991px) {
+	.advantage{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	.advantage .advantage-icon {
+		letter-spacing: 0;
+	}
+	.why-choose-us .advantage-wrapper .row + .row{
+		margin-top: 0px;
+	}
+}
+
 /*WHY-CHOOSE-US END*/
 
 /*LIKE OUR WORKS START*/
+
+@media (max-width: 479px){
+	.like-our-works .btn{
+		width: 100%;
+	}
+}
+
 /*LIKE OUR WORKS END*/
 
 /*REVIEWS CAROUSEL START*/
@@ -1054,17 +1074,30 @@ textarea.form-control{
 		margin-bottom: 30px;
 		padding-bottom: 30px;
 		border-bottom:1px solid #e5e5e5;
+		text-align: center;
 	}
 }
 
 @media (max-width: 576px) {
+	.latest-news .title{
+		text-align: center;
+		margin-bottom: 35px;
+	}
+	.latest-news .title a{
+		display: block;
+		float: none;
+	}
 	.latest-news .news-item .btn{
 		display: block;
 		margin: 0 auto;
+		width: 50%;
 	}
 }
 
 @media (max-width: 479px) {
+	.latest-news .title{
+		margin-bottom: 20px;
+	}
 	.latest-news .news-item .btn{
 		display: block;
 		width: 90%;
@@ -1203,6 +1236,10 @@ textarea.form-control{
 }
 
 @media (max-width: 479px) {
+
+	.contact-form .form-send-info {
+		margin-top: 5px;
+	}
 	.form-send-info .btn{
 		display: block;
 		width: 100%;
@@ -1256,12 +1293,17 @@ textarea.form-control{
 	text-transform: uppercase;
 	margin-top:30px;
 }
+
+@media (max-width: 479px){
+	#map{
+		height: 300px;
+	}
+}
 /*MAP END*/
 
 /*FOOTER START*/
 .footer{
 	padding:140px 0 59px;
-	background-color: #f8f8f8;
 }
 
 .footer .footer-nav{
@@ -1303,6 +1345,15 @@ textarea.form-control{
 	letter-spacing: 0;
 	font-size: 11px;
 	color:#999999;
+}
+
+@media (max-width: 479px){
+	.footer{
+		padding: 40px 0 25px;
+	}
+	.footer .copyright {
+		margin-top: 50px;
+	}
 }
 /*FOOTER END*/
 

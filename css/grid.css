@@ -191,7 +191,7 @@
 }
 
 /*Extra - Small devices*/
-@media (max-width: 767px) {
+@media (max-width: 576px) {
 	.col-xs-1{
 	width: 8.333333333%
 	}
